@@ -29,7 +29,10 @@ class HybridIntentRouter:
         "general": "thông tin chung về sản phẩm chính sách hướng dẫn",
     }
     INTENT_KEYWORDS = {
-        "warranty": ("bảo hành", "bảo trì", "apple care", "đổi máy", "lỗi phần cứng"),
+        "warranty": (
+            "bảo hành", "bảo trì", "apple care", "đổi máy", "đổi mới",
+            "lỗi phần cứng", "gói 1 đổi 1", "quyền lợi bảo hành",
+        ),
         "returns": ("đổi trả", "hoàn tiền", "trả hàng", "hoàn lại", "refund"),
         "seller": ("người bán", "seller", "đăng bán", "shop", "nhà bán hàng"),
     }
