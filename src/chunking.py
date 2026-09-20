@@ -150,12 +150,12 @@ class ChunkingStrategyComparator:
         recursive = RecursiveChunker(chunk_size=chunk_size).chunk(text)
         
         return {
-            "fixed": {
+            "fixed_size": {
                 "count": len(fixed),
                 "avg_length": sum(len(c) for c in fixed) / max(1, len(fixed)),
                 "chunks": fixed
             },
-            "sentence": {
+            "by_sentences": {
                 "count": len(sentence),
                 "avg_length": sum(len(c) for c in sentence) / max(1, len(sentence)),
                 "chunks": sentence

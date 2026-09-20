@@ -18,6 +18,7 @@ from .embeddings import (
     _mock_embed,
 )
 from .models import Document
+from .router import HybridIntentRouter, IntentDecision
 from .store import EmbeddingStore
 
 __all__ = [
@@ -29,6 +30,8 @@ __all__ = [
     "compute_similarity",
     "EmbeddingStore",
     "KnowledgeBaseAgent",
+    "HybridIntentRouter",
+    "IntentDecision",
     "MockEmbedder",
     "LocalEmbedder",
     "OpenAIEmbedder",
